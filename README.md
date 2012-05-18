@@ -49,11 +49,11 @@ Authors
 
 Author of original C code:
 
-  Ilya Mezhirov	http://djvulibre.djvuzone.org
+ - Ilya Mezhirov	http://djvulibre.djvuzone.org
 
 Authors of .js library: 
 
  + Lebedkin	lebed.salavat at gmail.com	
 
-  +Bannikov	bannandrej at gmail.com
+ + Bannikov	bannandrej at gmail.com
 
