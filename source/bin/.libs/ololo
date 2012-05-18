@@ -1,0 +1,4 @@
+echo "function renderdjvu(djvufile, canvasid){var Module={};" > qwe
+cat temp.js | sed s@\"/djvu\"@djvufile@g | sed s@\"qwecanvas\"@canvasid@g >> qwe
+#cat temp.js | sed s@\"qwecanvas\"@canvasid@ >> qwe
+echo "Module.prepreRun(); }" >> qwe

@@ -1,0 +1,4 @@
+#!/bin/sh
+lli=${LLVMINTERP-lli}
+exec $lli \
+    ../bin/.libs/libminidjvu.so.0.0.8 ${1+"$@"}

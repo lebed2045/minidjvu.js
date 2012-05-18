@@ -1,0 +1,7 @@
+cp minidjvu.bc opt.bc
+#opt minidjvu.bc `cat anal` `cat optm` > opt.bc
+#opt minidjvu.bc -no-aa -tbaa -basicaa -globalopt -ipsccp -deadargelim -instcombine -simplifycfg -basiccg -prune-eh -inline -functionattrs -argpromotion -domtree -early-cse -simplify-libcalls -lazy-value-info -jump-threading -correlated-propagation -simplifycfg -instcombine -tailcallelim -simplifycfg -reassociate -domtree -loops -loop-simplify -lcssa -loop-rotate -lcssa -loop-unswitch -instcombine -scalar-evolution -loop-simplify -lcssa -indvars -loop-idiom -loop-deletion -loop-unroll -memdep -gvn -memdep -memcpyopt -sccp -instcombine -lazy-value-info -jump-threading -correlated-propagation -domtree -memdep -dse -adce -simplifycfg -instcombine -strip-dead-prototypes -globaldce -constmerge -preverify -domtree -verify > opt.bc
+~/emscripten/emcc opt.bc -o temp.js -O3 --llvm-opts 0 --pre-js _pre.js -s EXPORTED_FUNCTIONS="['prepreRun']"
+sh ololo
+#scp qwe reslib.com:/var/www/rhall-mvc/temp.js
+cp qwe /var/www/image/temp2.js

@@ -1,0 +1,2 @@
+opt minidjvu.bc -inline > opt.bc
+~/emscripten/emcc opt.bc -o meh.html --preload-file /djvu -O1 --llvm-opts 3 --pre-js pre.js && scp meh.html 146.185.21.49:/var/www/localhost/htdocs
