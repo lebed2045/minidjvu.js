@@ -8,13 +8,13 @@ How to use
 
 * download file minidivu.js
 
-* add in your HTML code: 
+* call from minidjvu.js a function renderDjvu(<filename.js>,<id_canvas>), where <filename> - path to DjVu onepage black&white file, <id_canvas> - HTML identifier of a canvas. For example:
 
 ```
 		<script type='text/javascript' src='minidjvu.js'></script>
 		<canvas id="djvucanvas" width="800">			    
 			<script type='text/javascript'>
-				renderdjvu("2.djvu","djvucanvas");
+				renderdjvu("sample.djvu","djvucanvas");
 			</script>
 		</canvas>
 ```
