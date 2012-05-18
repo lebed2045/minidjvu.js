@@ -20,7 +20,7 @@ How to use:
 '''
 
 
-how to modify:
+How to modify:
 -------------
 
 * download repo `git clone https://lebedkin@github.com/lebedkin/minidjvu.js.git`
