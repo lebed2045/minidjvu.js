@@ -8,7 +8,7 @@ How to use
 
 * download file minidivu.js
 
-* call from minidjvu.js a function `renderDjvu(<filename.js>,<id_canvas>)`, where <filename> - path to DjVu onepage black&white file, <id_canvas> - HTML identifier of a canvas. For example:
+* call from minidjvu.js a function `renderDjvu(<filename.js>,<id_canvas>)`, where `<filename>` - path to DjVu onepage black&white file, `<id_canvas>` - HTML identifier of a canvas. For example:
 
 ```
 		<script type='text/javascript' src='minidjvu.js'></script>
