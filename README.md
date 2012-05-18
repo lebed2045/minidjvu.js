@@ -3,7 +3,7 @@ minidjvu.js
 
 MiniDjVu.js is an open sourse DjVu decoder on JavaScript based on [minidjvu-0.8](http://djvulibre.djvuzone.org)
 
-How to use:
+How to use
 ----------
 
 * download file minidivu.js
@@ -19,17 +19,30 @@ How to use:
 		</canvas>
 ```
 
+Demo
+----
 
-How to modify:
+Simple online books reader [link](http://ntfs.narod.ru/onlineReader.html)
+
+
+How to modify
 -------------
 
-* download repo `git clone https://lebedkin@github.com/lebedkin/minidjvu.js.git`
+* Clone the repo `git clone https://lebedkin@github.com/lebedkin/minidjvu.js.git`
 
-* install and config [emscripten](https://github.com/kripken/emscripten/wiki/Tutorial)
+* Install and config [emscripten](https://github.com/kripken/emscripten/wiki/Tutorial)
 
-* ???
+* Run 
 
-* PROFIT!!!
+Currently under development
+---------------------------
+
+* Multypages
+
+* Encryption
+
+* Compatibility with Opera 11.1 and later
+
 
 Authors
 -------
