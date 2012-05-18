@@ -5,16 +5,19 @@ minidjvu.js is an open sourse DjVu decoder on JavaScript based on [minidjvu-0.8]
 
 How to use:
 ----------
+
 * download file minidivu.js
+
 * add in your HTML code: 
-	'''
+
+'''
 		<script type='text/javascript' src='minidjvu.js'></script>
 		<canvas id="djvucanvas" width="800">			    
 			<script type='text/javascript'>
 				renderdjvu("2.djvu","djvucanvas");
 			</script>
 		</canvas>
-	'''
+'''
 
 
 how to modify:
@@ -27,13 +30,13 @@ how to modify:
 Authors
 -------
 
-Author of original C code
+Author of original C code:
 
-	Ilya Mezhirov	http://djvulibre.djvuzone.org
+  Ilya Mezhirov	http://djvulibre.djvuzone.org
 
 Authors of .js library: 
 
-	Lebedkin	lebed.salavat<at>gmail.com	
+  Lebedkin	lebed.salavat at gmail.com	
 
-  Bannikov	bannandrej<at>gmail.com
+  Bannikov	bannandrej at gmail.com
 
