@@ -53,7 +53,7 @@ Author of original C code:
 
 Authors of .js library: 
 
-  Lebedkin	lebed.salavat at gmail.com	
+ + Lebedkin	lebed.salavat at gmail.com	
 
-  Bannikov	bannandrej at gmail.com
+  +Bannikov	bannandrej at gmail.com
 
