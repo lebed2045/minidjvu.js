@@ -22,7 +22,7 @@ How to use
 Demo
 ----
 
-Simple online books reader [link](http://ntfs.narod.ru/onlineReader.html)
+[onlineReader](http://ntfs.narod.ru/onlineReader.html) - Simple online books reader
 
 
 How to modify
