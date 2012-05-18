@@ -32,7 +32,7 @@ How to modify
 
 * Install and config [emscripten](https://github.com/kripken/emscripten/wiki/Tutorial)
 
-* Run 
+* To compile: `$ ./em_make`
 
 Currently under development
 ---------------------------
@@ -41,7 +41,7 @@ Currently under development
 
 * Encryption
 
-* Compatibility with Opera 11.1 and later
+* Compatibility with Opera 11.1 and later versions
 
 
 Authors
