@@ -10,7 +10,7 @@ How to use
 
 * include it in your HTML web-page
 
-* call from minidjvu.js function `renderdjvu(<filename.js>,<id_canvas>)`, where `<filename>` - path to DjVu onepage black&white file, `<id_canvas>` - HTML identifier of a canvas. For example:
+* call from minidjvu.js function `renderdjvu(<filename.js>,<id_canvas>)`, with two arguments: `<filename>` - path to DjVu onepage black&white file, `<id_canvas>` - HTML identifier of a canvas. For example:
 
 ```
 		<script type='text/javascript' src='minidjvu.js'></script>
@@ -20,6 +20,7 @@ How to use
 			</script>
 		</canvas>
 ```
+this sample draw sample.djvu on canvas with id="djvucanvas", pay attention a rendered page is exactly equal to the width of canvas - so make sure to specify the width of the canvas!
 
 Demo
 ----
@@ -34,7 +35,7 @@ How to modify
 
 * Install and config [emscripten](https://github.com/kripken/emscripten/wiki/Tutorial)
 
-* To compile: `$ ./em_make`
+* Lunch make.sh to build project `./make.sh`
 
 Currently under development
 ---------------------------
