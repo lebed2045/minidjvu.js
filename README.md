@@ -6,9 +6,11 @@ MiniDjVu.js is an open sourse DjVu decoder on JavaScript based on [minidjvu-0.8]
 How to use
 ----------
 
-* download file minidivu.js
+* download script-file minidivu.js
 
-* call from minidjvu.js a function `renderdjvu(<filename.js>,<id_canvas>)`, where `<filename>` - path to DjVu onepage black&white file, `<id_canvas>` - HTML identifier of a canvas. For example:
+* include it in your HTML web-page
+
+* call from minidjvu.js function `renderdjvu(<filename.js>,<id_canvas>)`, where `<filename>` - path to DjVu onepage black&white file, `<id_canvas>` - HTML identifier of a canvas. For example:
 
 ```
 		<script type='text/javascript' src='minidjvu.js'></script>

@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Simple online reader</title>
+	</head>
+	
+	<body onload="renderdjvu('data/1.djvu','djvucanvas')">
+	
+		<script type='text/javascript' src='minidjvu.js'></script>
+		
+		<script type="text/javascript">
+			var pageNumber = 1;
+		</script>
+		
+		<input type="button" onclick="pageNumber -= 1; renderdjvu('data/'+pageNumber+'.djvu','djvucanvas')" value="<"/> 
+		<input type="button" onclick="pageNumber += 1; renderdjvu('data/'+pageNumber+'.djvu','djvucanvas')" value=">"/> 
+		<br/>		
+		<canvas id="djvucanvas" width="800"></canvas>
+
+	</body>
+</html>
+
+
+
