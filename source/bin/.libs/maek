@@ -4,4 +4,4 @@ cp minidjvu.bc opt.bc
 ~/emscripten/emcc opt.bc -o temp.js -O3 --llvm-opts 0 --pre-js _pre.js -s EXPORTED_FUNCTIONS="['prepreRun']"
 sh ololo
 #scp qwe reslib.com:/var/www/rhall-mvc/temp.js
-cp qwe /var/www/image/temp2.js
+#cp qwe /var/www/image/temp2.js

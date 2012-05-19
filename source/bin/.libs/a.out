@@ -1,4 +1,4 @@
 #!/bin/sh
 lli=${LLVMINTERP-lli}
 exec $lli \
-    /tmp/tmpKw5pLo/temp.bc ${1+"$@"}
+    /tmp/tmpMZV3Vp/temp.bc ${1+"$@"}
