@@ -1,18 +1,23 @@
 <html>
 	<head>
 		<title>Simple online reader</title>
+		<script type='text/javascript' src='minidjvu.js'></script>
 	</head>
 	
-	<body onload="renderdjvu('data/1.djvu','djvucanvas')">
+	<body onload="drawdjvu()">
 	
-		<script type='text/javascript' src='minidjvu.js'></script>
-		
-		<script type="text/javascript">
-			var pageNumber = 1;
+	    <script type='text/javascript'>
+			var pageNumber = 1;	
+			function drawdjvu()
+			{
+				renderdjvu('data/'+pageNumber+'.djvu','djvucanvas')
+			}
 		</script>
-		
-		<input type="button" onclick="pageNumber -= 1; renderdjvu('data/'+pageNumber+'.djvu','djvucanvas')" value="<"/> 
-		<input type="button" onclick="pageNumber += 1; renderdjvu('data/'+pageNumber+'.djvu','djvucanvas')" value=">"/> 
+			
+		<input type="button" onclick="pageNumber -= 1;  drawdjvu()" value="<"/> 
+		<input type="button" onclick="pageNumber += 1;  drawdjvu()" value=">"/> 
+		<input type='submit' onclick='document.getElementById("djvucanvas").width+=50; drawdjvu()' value='+'>
+		<input type='submit' onclick='document.getElementById("djvucanvas").width-=50; drawdjvu()' value='-'>
 		<br/>		
 		<canvas id="djvucanvas" width="800"></canvas>
 
