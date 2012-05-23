@@ -12,7 +12,7 @@ How to use
 
 * call from minidjvu.js function `renderdjvu(<filename.js>,<id_canvas>)`, with two arguments: `<filename>` - path to DjVu onepage black&white file, `<id_canvas>` - HTML identifier of a canvas. For example:
 
-```
+```html
 		<script type='text/javascript' src='minidjvu.js'></script>
 		<canvas id="djvucanvas" width="800">			    
 			<script type='text/javascript'>
@@ -22,7 +22,7 @@ How to use
 ```
 this sample draw sample.djvu on canvas with id="djvucanvas", pay attention a rendered page is exactly equal to the width of canvas - so make sure to specify the width of the canvas!
 
-*Warning!* HTML file must located on a Web server, and  DjVu documents  should be placed on the same domain as the HTML file. 
+###Warning!### HTML file must located on a Web server, and  DjVu documents  should be placed on the same domain as the HTML file. 
 
 Demo
 ----
