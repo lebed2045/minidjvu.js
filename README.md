@@ -22,6 +22,8 @@ How to use
 ```
 this sample draw sample.djvu on canvas with id="djvucanvas", pay attention a rendered page is exactly equal to the width of canvas - so make sure to specify the width of the canvas!
 
+[Warning!] HTML file must located on a Web server, and  DjVu documents  should be placed on the same domain as the HTML file. 
+
 Demo
 ----
 
