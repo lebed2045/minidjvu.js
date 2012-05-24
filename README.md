@@ -72,3 +72,7 @@ Authors of .js library:
 
  + Bannikov	bannandrej at gmail.com
 
+Supervisor 
+
+ + Alexander Shen	alexander.shen at lirmm.fr
+
