@@ -1,7 +1,8 @@
+function renderdjvu(djvufile, canvasid){var Module={};
 Module["prepreRun"] = (function() {
   FS.createDataFile("/", "bmp.bmp", "qwe", true, true);
   var filePreload0 = new XMLHttpRequest;
-  filePreload0.open("GET", "/djvu", true);
+  filePreload0.open("GET", djvufile, true);
   filePreload0.responseType = "arraybuffer";
   filePreload0.onload = (function() {
     var arrayBuffer = filePreload0.response;
@@ -10,7 +11,7 @@ Module["prepreRun"] = (function() {
     FS.createDataFile("/", "djvu", byteArray, true, true);
     run();
   });
-  Module["canvasId"] = "qwecanvas";
+  Module["canvasId"] = canvasid;
   filePreload0.send(null);
 });
 
@@ -41,7 +42,7 @@ Module["postRun"] = (function() {
   bb.append((new Uint8Array(arrayBuffer)).buffer);
   var b = bb.getBlob();
   var url = URLObject.createObjectURL(b);
-  var img = document.getElementById("qwecanvas");
+  var img = document.getElementById(canvasid);
   img.onload = (function() {
     console.log("woah");
     assert(img.complete, "Image /bmp.bmp could not be decoded");
@@ -10546,3 +10547,4 @@ if (runDependencies == 0) {
 }
 // EMSCRIPTEN_GENERATED_FUNCTIONS: ["_qwe_djvu_height","_qwe_djvu_width","_mdjvu_get_error","_mdjvu_get_error_message","_mdjvu_bitmap_get_width","_mdjvu_bitmap_get_height","_mdjvu_bitmap_get_index","_mdjvu_bitmap_set_index","_mdjvu_bitmap_get_packed_row_size","_mdjvu_bitmap_access_packed_row","_mdjvu_bitmap_pack_row","_mdjvu_bitmap_unpack_row","_mdjvu_bitmap_unpack_row_0_or_1","_main","_qwe_save_djvu","_decide_if_bmp","_decide_if_tiff","_qwe_loadrender_djvu","_mdjvu_create_2d_array","_mdjvu_destroy_2d_array","_mdjvu_bitmap_create","_mdjvu_bitmap_destroy","_mdjvu_bitmap_clone","_mdjvu_bitmap_exchange","_mdjvu_bitmap_pack_all","_save_bitmap","_load_image","_column_is_empty","_row_is_empty","_mdjvu_image_get_width","_mdjvu_image_get_height","_mdjvu_image_get_bitmap_count","_mdjvu_image_get_blit_count","_mdjvu_bitmap_crop","_mdjvu_bitmap_get_bounding_box","_mdjvu_bitmap_remove_margins","_mdjvu_bitmap_get_mass","_mdjvu_image_create","_mdjvu_image_destroy","_mdjvu_image_disable_artifact","_mdjvu_image_get_bitmap","_mdjvu_image_get_blit_x","_mdjvu_image_get_blit_y","_mdjvu_image_set_blit_x","_mdjvu_image_set_blit_y","_mdjvu_image_get_blit_bitmap","_mdjvu_image_add_bitmap","_initialize_artifacts","_mdjvu_image_new_bitmap","_mdjvu_image_add_blit","_initialize_artifact","_my_strcasecmp","_ends_with_ignore_case","_mdjvu_render","_mdjvu_file_save_bmp","_mdjvu_disable_tiff_warnings","_skip_in_chunk","_write_bmp_header","_save_DIB_bytes","_mdjvu_save_bmp","_write_uint32","_write_uint16","_mdjvu_locate_jb2_chunk","_read_uint32_most_significant_byte_first","_get_child_chunk","_find_sibling_chunk","_mdjvu_file_load_djvu_page","_mdjvu_load_djvu_page","_skip_to_next_sibling_chunk","_mdjvu_save_pbm","_mdjvu_file_save_pbm","_mdjvu_save_tiff","__ZN16JB2BitmapDecoder8load_rowEP14MinidjvuBitmapiPh","__ZN12ZPBitContextC1Ev","__ZN16JB2BitmapDecoder17reset_numcontextsEv","__ZN16JB2BitmapDecoder17code_row_directlyEiPhS0_S0_S0_","__ZN16JB2BitmapDecoder10code_pixelER12ZPBitContextPhi","__ZN16JB2BitmapDecoder22code_row_by_refinementEiPhS0_S0_S0_S0_S0_","__ZN16JB2BitmapDecoder19code_image_directlyEP14MinidjvuBitmapS1_","__ZN16JB2BitmapDecoder8save_rowEP14MinidjvuBitmapiPhi","__ZN16JB2BitmapDecoderC2ER9ZPDecoderP15ZPMemoryWatcher","__ZN12ZPBitContextC2Ev","__ZN16JB2BitmapDecoder24code_image_by_refinementEP14MinidjvuBitmapS1_S1_","__ZN16JB2BitmapDecoder6decodeEP13MinidjvuImageP14MinidjvuBitmap","__ZN7WatcherC1Ev","__ZN7JB2RectC1Eiiii","__ZN7JB2RectC1Ev","__ZN7WatcherD1Ev","__ZN8JB2CoderC2Ev","__ZN7JB2RectC2Ev","__ZN15ZPMemoryWatcherC2Ev","__ZN7JB2RectC2Eiiii","__ZN7Watcher17handle_allocationEv","__ZN8JB2Coder17reset_numcontextsEv","__ZN10JB2Decoder25decode_character_positionERiS0_ii","__ZN10JB2Decoder11decode_blitEP13MinidjvuImagei","__ZN10JB2Decoder5resetEv","__ZN10JB2Decoder18decode_record_typeEv","__ZN7WatcherD2Ev","__ZN7WatcherC2Ev","__ZN7WatcherD0Ev","__ZN8JB2CoderD2Ev","__ZN10JB2DecoderC2EP7__sFILEi","__ZN16JB2BitmapDecoderD2Ev","__ZN15ZPMemoryWatcherD2Ev","__ZN12ZPNumContext4initEv","__ZL16decode_lib_shapeR10JB2DecoderP13MinidjvuImagebP14MinidjvuBitmap","__Z14append_to_listIP14MinidjvuBitmapEPT_RS3_RiS5_","__ZN10JB2DecoderD1Ev","__ZN15ZPMemoryWatcherD0Ev","__ZN12ZPNumContextC2EiiP15ZPMemoryWatcher","__ZN12ZPNumContextD2Ev","_mdjvu_file_load_jb2","__ZN10JB2DecoderD2Ev","__ZN12ZPNumContext12set_intervalEii","__ZN12ZPNumContext8get_leftEt","__ZN12ZPNumContext8new_nodeEv","__ZN12ZPNumContext9get_rightEt","__ZN12ZPNumContext5resetEv","___cxx_global_var_init","__ZN6IniterC1Ev","__ZN9ZPDecoderC2EP7__sFILEi","__ZN9ZPDecoder4openEv","__ZN9ZPDecoder9next_byteERh","__ZN9ZPDecoder7preloadEv","__ZN9ZPDecoder6decodeER12ZPNumContext","__ZN9ZPDecoder6decodeER12ZPBitContext","__ZN9ZPDecoder10decode_subER12ZPBitContextj","__ZN9ZPDecoder3ffzEj","__ZL14init_ffz_tablev","__ZL11init_tablesv","__ZNK10__cxxabiv117__class_type_info24process_found_base_classEPNS_19__dynamic_cast_infoEPvi","__ZNK10__cxxabiv117__class_type_info29process_static_type_above_dstEPNS_19__dynamic_cast_infoEPKvS4_i","__ZNK10__cxxabiv117__class_type_info29process_static_type_below_dstEPNS_19__dynamic_cast_infoEPKvi","__ZN6IniterC2Ev","__ZL4initv","__GLOBAL__I_a","__ZN10__cxxabiv116__shim_type_infoD2Ev","__ZN10__cxxabiv117__class_type_infoD0Ev","__ZN10__cxxabiv120__si_class_type_infoD0Ev","__ZNK10__cxxabiv117__class_type_info9can_catchEPKNS_16__shim_type_infoERPv","__ZNK10__cxxabiv117__class_type_info27has_unambiguous_public_baseEPNS_19__dynamic_cast_infoEPvi","__ZNK10__cxxabiv120__si_class_type_info27has_unambiguous_public_baseEPNS_19__dynamic_cast_infoEPvi","___dynamic_cast","__ZNK10__cxxabiv120__si_class_type_info16search_below_dstEPNS_19__dynamic_cast_infoEPKvi","__ZNK10__cxxabiv117__class_type_info16search_below_dstEPNS_19__dynamic_cast_infoEPKvi","__ZNK10__cxxabiv120__si_class_type_info16search_above_dstEPNS_19__dynamic_cast_infoEPKvS4_i","__ZNK10__cxxabiv117__class_type_info16search_above_dstEPNS_19__dynamic_cast_infoEPKvS4_i","_malloc","_tmalloc_small","_tmalloc_large","_sys_alloc","_free","_sys_trim","_calloc","_realloc","_release_unused_segments","_mmap_resize","_segment_holding","_init_top","_mmap_alloc","_init_bins","_internal_realloc","_init_mparams","_prepend_alloc","__ZdlPv","_add_segment"]
 
+Module.prepreRun(); }

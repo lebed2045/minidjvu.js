@@ -83,7 +83,17 @@ Module['postRun'] = function() {
 	canvas.height = destHeight;
 	
 	img.onload = function(){
-		context.drawImage(img, 0, 0, sourceWidth, sourceHeight, 0, 0, destWidth, destHeight );
+		    var steps = sourceWidth/destWidth;
+			if (steps > 4) steps = 4;
+			if (steps < 1) steps = 1;
+			context.globalCompositeOperation = "darker";
+			context.globalAlpha = 1;
+			for (i = 0; i < steps; i++)
+			{
+				context.drawImage(img, i, i, sourceWidth - steps + i, sourceHeight - steps + i, 0, 0, destWidth, destHeight);
+				context.globalAlpha *= 1 - 1/steps;
+			}
+
 		assert(img.complete, 'Image /bmp.bmp could not be decoded');
 	};
 	img.onerror = function(event) {
