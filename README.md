@@ -68,11 +68,11 @@ Author of original C code:
 
 Authors of .js library: 
 
- + Lebedkin	lebed.salavat at gmail.com	
+ + Lebedkin	 - lebed.salavat at gmail.com	
 
- + Bannikov	bannandrej at gmail.com
+ + Bannikov		bannandrej at gmail.com
 
 Supervisor 
 
- + Alexander Shen	alexander.shen at lirmm.fr
+ + Alexander Shen		alexander.shen at lirmm.fr
 
