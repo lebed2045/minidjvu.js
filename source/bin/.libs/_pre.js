@@ -63,14 +63,22 @@ var bb = new BlobBuilder();
 var b = bb.getBlob();
 var url = URLObject.createObjectURL(b);
 
-var img = document.getElementById("qwecanvas");
-img.onload = function() {
-	console.log('woah');
-	assert(img.complete, 'Image /bmp.bmp could not be decoded');
-};
-img.onerror = function(event) {
-	console.log('Image /bmp.bmp could not be decoded');
-};
-
-img.src = url;
+img.onload = function(){
+	    var steps = sourceWidth/destWidth;
+	    if (steps > 3) steps = 3;
+	    if (steps < 1) steps = 1;
+	    context.globalCompositeOperation = "darker";
+	    context.globalAlpha = 1;
+	    for (i = 0; i < steps; i++)
+	    {
+	       context.drawImage(img, i, i, sourceWidth - steps + i, sourceHeight - steps + i, 0, 0, destWidth, destHeight);
+	       context.globalAlpha *= 1 - 1/steps;
+	    }
+		assert(img.complete, 'Image /bmp.bmp could not be decoded');
+	};
+	img.onerror = function(event) {
+		console.log('Image /bmp.bmp could not be decoded');
+	};
+	
+	img.src = url;
 }
