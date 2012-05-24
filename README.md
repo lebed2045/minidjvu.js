@@ -1,7 +1,7 @@
 minidjvu.js
 ===========
 
-MiniDjVu.js is an open sourse DjVu decoder on JavaScript based on [minidjvu-0.8](http://djvulibre.djvuzone.org)
+MiniDjVu.js is an open sourse DjVu decoder on JavaScript based on [minidjvu-0.8](http://minidjvu.sourceforge.net/)
 
 How to use
 ----------
