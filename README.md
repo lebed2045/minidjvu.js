@@ -22,7 +22,7 @@ For example:
 	</head>
 
 	<body>
-		<canvas id="djvucanvas" width="800" hight="1200">			    
+		<canvas id="djvucanvas" width="800" height="1200">			    
 			<script type='text/javascript'>
 				renderdjvu("sample.djvu","djvucanvas");
 			</script>
